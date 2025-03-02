@@ -1,0 +1,21 @@
+<?php
+// Theme setup function
+function frog_theme_setup() {
+    // Enable dynamic document title
+    add_theme_support('title-tag');
+    
+    // Enable featured images
+    add_theme_support('post-thumbnails');
+    
+    // Register navigation menu
+    register_nav_menus(array(
+        'main-menu' => __('Main Menu', 'frog-theme'),
+    ));
+}
+add_action('after_setup_theme', 'frog_theme_setup');
+
+// Enqueue styles and scripts
+function frog_theme_scripts() {
+    wp_enqueue_style('frog-main-style', get_template_directory_uri() . '/assets/style/main.css');
+}
+add_action('wp_enqueue_scripts', 'frog_theme_scripts');
