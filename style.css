@@ -1,11 +1,17 @@
 /*
 Theme Name: The Frog
-Theme URI: http://example.com
+Theme URI: http://wp.thefr.org/
 Author: Your Name
-Author URI: http://yourwebsite.com
-Description: A custom WordPress theme.
-Version: 1.0
+Author URI: http://wp.thefr.org/
+Description: A custom WordPress theme for frog enthusiasts featuring a clean, responsive design with green accents.
+Version: 0.1.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: frog-theme
+Tags: custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/* 
+This is the main style.css file required by WordPress to identify the theme.
+The actual styles are loaded from assets/css/main.css
 */
