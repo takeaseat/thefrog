@@ -20,4 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
             navMenu.classList.toggle("active");
         });
     }
+    
+    // Dynamic background animation control
+    const backgroundOpacityControl = document.querySelector('#customize-control-background_opacity input');
+    if (backgroundOpacityControl) {
+        backgroundOpacityControl.addEventListener('input', function() {
+            document.documentElement.style.setProperty('--background-opacity', this.value);
+        });
+    }
+    
+    // Add parallax effect to background
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        document.body.style.backgroundPositionY = (scrollPosition * 0.05) + 'px';
+    });
 });
